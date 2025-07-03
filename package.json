@@ -1,0 +1,40 @@
+{
+  "name": "migrate-blg-gfm-markdown",
+  "version": "1.0.0",
+  "description": "Migrate Backlog Markdown to GitHub Flavored Markdown by adding spaces after # in headers",
+  "main": "dist/index.js",
+  "bin": {
+    "migrate-blg-gfm": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node src/test-markdown.ts",
+    "build:sea": "npm run build && node scripts/build-sea.js"
+  },
+  "keywords": [
+    "backlog",
+    "markdown",
+    "gfm",
+    "migration"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "backlog-js": "^0.13.5",
+    "cli-progress": "^3.12.0",
+    "dotenv": "^16.3.0",
+    "inquirer": "^8.2.6",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.19.0",
+    "postject": "^1.0.0-alpha.6",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
