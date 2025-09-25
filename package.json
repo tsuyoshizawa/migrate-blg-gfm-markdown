@@ -19,7 +19,12 @@
     "gfm",
     "migration"
   ],
-  "author": "",
+  "author": "Tsuyoshi Yoshizawa",
+  "maintainers": [
+    {
+      "name": "Tsuyoshi Yoshizawa"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "backlog-js": "^0.13.5",
